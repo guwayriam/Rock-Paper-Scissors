@@ -51,7 +51,11 @@ while( Math.abs(round) < 3  && game < 5){
     let num = Math.random() *3;
     let random = Math.floor(num);
 
-    if(choice != null){
+    if(choice === null){
+       console.log('Wrong entery. Try again');
+
+    }else{
+        
         let play = computerPlay(random);
         let win = playRound(choice.toUpperCase(), play);
         if(win > 0){
@@ -59,13 +63,11 @@ while( Math.abs(round) < 3  && game < 5){
         }else if(win < 0){
             console.log('Computer won')
         }else (
-            console.log('Tie Tie')
+            console.table(choice)
+            
         )
         round + win
         game ++;
-
-    }else{
-        console.log('Wrong entery. Try again');
     }
 
     
