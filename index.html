@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RockPaperScissors</title>
+    <title>Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <div class="container"> 
-        <h1> Rock Paper Scissors</h1>
-        <div class="winner"></div>
-        <div class="buttons">
-            <button class="Rock"> Rock</button>
-            <button class="Paper">Paper</button>
-            <button class="Scissors">Scissors</button>
-        </div>
+    <header> <h1>Rock Paper Scissors</h1></header>
+    <div class="scoreboard">
+      <div id= "userBagde" class = "badge">User</div>  
+      <div id= "computerBagde" class = "badge">Comp</div> 
+      <span id ="userScore">0 </span><span>:</span><span id ="computerScore"> 0</span>
     </div>
-   <!-- <script src="game.js"></script> -->
+
+    <div class = "result"> Start Game </div>
+
+    <div class = "choice">
+        <div class = "move" id="r">Rock</div>
+        <div class = "move" id="p">Paper</div>
+        <div class = "move" id="s">Scissors</div>
+    </div>
+
+    <div class = "message">Make a move</div>
+
+    <script src = "game.js"></script>
+    
 </body>
 </html>
