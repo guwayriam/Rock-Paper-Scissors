@@ -9,21 +9,25 @@ const paper_Div = document.getElementById("p");
 const scissor_Div = document.getElementById("s");
 const message = document.getElementById("message");
 
-function game(userChoice){
-    let compChoice = compChoice();
-}
-
 function compChoice(){
     let choice =['r','p','s'];
     let rand = Math.floor(Math.random()* 3)
-    console.log(choice[rand]);
-    console.log(rand)
+   // console.log(choice[rand]);
+   // console.log(rand)
     return choice[rand];
 }
 
+function game(userChoice){
+    let compChoice = compChoice();
+    result.innerHTML = userChoice +' '+ compChoice;
+}
 
-rock_Div.addEventListener("click", function(){
-   // game("r")
-    //console.log(compChoice);
-    compChoice()
-})
+function main(){
+    rock_Div.addEventListener("click", function(){
+        //game("r")
+        console.log(compChoice() + " compchoice");
+       // compChoice()
+    })
+}
+
+main();
